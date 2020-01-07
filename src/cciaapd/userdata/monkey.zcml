@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    i18n_domain="cciaapd.userdata">
+
+   <include package="collective.monkeypatcher" />
+
+   <monkey:patch
+       description="formlib patch for tokens"
+       class="zope.formlib.itemswidgets.ItemsWidgetBase"
+       original="convertTokensToValues"
+       replacement=".monkey.convertTokensToValues"
+     />
+
+</configure>

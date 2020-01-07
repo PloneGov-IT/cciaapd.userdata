@@ -5,8 +5,21 @@ CCIAPD - User data
 Aggiunge campi extra per la registrazione degli utenti
 
 
-Traduzioni
+Comuni
+------
+
+Uno dei campi, prevede una lista di comuni di Padova tra cui scegliere.
+
+La lista è fissata nel file `comuni.py`.
+
+Monkeypatch
 -----------
+
+Abbiamo dovuto patchare un metodo di formlib in monkey.py (definito in monkey.zcml) per problemi con l'encoding di caratteri con accenti.
+
+
+Traduzioni
+----------
 
 Questo prodotto è stato tradotto nelle seguenti lingue:
 

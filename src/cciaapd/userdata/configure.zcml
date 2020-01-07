@@ -6,7 +6,7 @@
     i18n_domain="cciaapd.userdata">
 
   <i18n:registerTranslations directory="locales" />
-
+  <include file="monkey.zcml" />
   <include file="permissions.zcml" />
 
   <genericsetup:registerProfile
@@ -31,7 +31,5 @@
       factory=".setuphandlers.HiddenProfiles"
       name="cciaapd.userdata-hiddenprofiles"
       />
-
-  <!-- -*- extra stuff goes here -*- -->
 
 </configure>
