@@ -2,3 +2,8 @@ graft src/cciaapd
 graft docs
 include *.rst
 global-exclude *.pyc
+exclude .gitlab-ci.yml
+include LICENSE.GPL
+exclude constraints*.txt
+exclude requirements.txt
+exclude tox.ini
